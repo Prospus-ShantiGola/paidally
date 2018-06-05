@@ -1,0 +1,399 @@
+extends layout
+
+block content
+    nav#pb-navbar.navbar.navbar-expand-lg.navbar-dark.pb_navbar.pb_scrolled-light
+      .container
+        a.navbar-brand(href='index.html') Receipe
+        button.navbar-toggler.ml-auto(type='button', data-toggle='collapse', data-target='#probootstrap-navbar', aria-controls='probootstrap-navbar', aria-expanded='false', aria-label='Toggle navigation')
+          span
+            i.ion-navicon
+        #probootstrap-navbar.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item
+              a.nav-link(href='#section-home') Home
+            li.nav-item
+              a.nav-link(href='#section-features') Features
+            li.nav-item
+              a.nav-link(href='#section-reviews') Reviews
+            li.nav-item
+              a.nav-link(href='#section-pricing') Pricing
+            li.nav-item
+              a.nav-link(href='#section-faq') FAQ
+            li.nav-item.cta-btn.ml-xl-2.ml-lg-2.ml-md-0.ml-sm-0.ml-0
+              a.nav-link(href='https://uicookies.com/', target='_blank')
+                span.pb_rounded-4.px-4 Get Started
+    // END nav
+    section#section-home.pb_cover_v3.overflow-hidden.cover-bg-indigo.cover-bg-opacity.text-left.pb_gradient_v1.pb_slant-light
+      .container
+        .row.align-items-center.justify-content-center
+          .col-md-6
+            h2.heading.mb-3 Fly makes you faster
+            .sub-heading
+              p.mb-4
+                | New free template by 
+                a(href='http://uicookies.com', target='_blank') uicookies.com
+                | . For more templates visit the 
+                a(href='http://uicookies.com', target='_blank') site
+                | . Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              p.mb-5
+                a.btn.btn-success.btn-lg.pb_btn-pill.smoothscroll(href='#section-pricing')
+                  span.pb_font-14.text-uppercase.pb_letter-spacing-1 See Pricing
+          .col-md-1
+          .col-md-5.relative.align-self-center
+            form.bg-white.rounded.pb_form_v1(action='/signup')
+              h2.mb-4.mt-0.text-center Sign Up for Free
+              .form-group
+                input.form-control.pb_height-50.reverse(type='text', placeholder='Full name')
+              .form-group
+                input.form-control.pb_height-50.reverse(type='text', placeholder='Email')
+              .form-group
+                input.form-control.pb_height-50.reverse(type='text', placeholder='Email')
+              .form-group
+                .pb_select-wrap
+                  select.form-control.pb_height-50.reverse
+                    option(value='', selected='') Type
+                    option(value='') Basic
+                    option(value='') Business
+                    option(value='') Free
+              .form-group
+                input.btn.btn-primary.btn-lg.btn-block.pb_btn-pill.btn-shadow-blue(type='submit', value='Register')
+    // END section
+    section#section-features.pb_section.bg-light.pb_slant-white.pb_pb-250
+      .container
+        .row.justify-content-center.mb-5
+          .col-md-6.text-center.mb-5
+            h5.text-uppercase.pb_font-15.mb-2.pb_color-dark-opacity-3.pb_letter-spacing-2
+              strong Features
+            h2 App Features
+        .row
+          .col-lg-4.col-md-.col-sm-6
+            .media.d-block.pb_feature-v1.text-left
+              .pb_icon
+                i.ion-ios-bookmarks-outline.pb_icon-gradient
+              .media-body
+                h5.mt-0.mb-3.heading Minimal Design
+                p.text-sans-serif
+                  | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          .col-lg-4.col-md-.col-sm-6
+            .media.d-block.pb_feature-v1.text-left
+              .pb_icon
+                i.ion-ios-speedometer-outline.pb_icon-gradient
+              .media-body
+                h5.mt-0.mb-3.heading Fast Loading
+                p.text-sans-serif
+                  | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          .col-lg-4.col-md-.col-sm-6
+            .media.d-block.pb_feature-v1.text-left
+              .pb_icon
+                i.ion-ios-infinite-outline.pb_icon-gradient
+              .media-body
+                h5.mt-0.mb-3.heading Unlimited Possibilities
+                p.text-sans-serif
+                  | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          .col-lg-4.col-md-.col-sm-6
+            .media.d-block.pb_feature-v1.text-left
+              .pb_icon
+                i.ion-ios-color-filter-outline.pb_icon-gradient
+              .media-body
+                h5.mt-0.mb-3.heading Component Based Design
+                p.text-sans-serif
+                  | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          .col-lg-4.col-md-.col-sm-6
+            .media.d-block.pb_feature-v1.text-left
+              .pb_icon
+                i.ion-ios-wineglass-outline.pb_icon-gradient
+              .media-body
+                h5.mt-0.mb-3.heading Clean Code
+                p.text-sans-serif
+                  | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          .col-lg-4.col-md-.col-sm-6
+            .media.d-block.pb_feature-v1.text-left
+              .pb_icon
+                i.ion-ios-paperplane-outline.pb_icon-gradient
+              .media-body
+                h5.mt-0.mb-3.heading Lightweight
+                p.text-sans-serif
+                  | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+    // END section
+    section.pb_section.pb_slant-light
+      .container
+        .row
+          .col-lg-4.mb-5
+            img.img-fluid(src='/images/phone_3.png', alt='Image placeholder')
+          .col-lg-8.pl-md-5.pl-sm-0
+            .row
+              .col
+                h2 Application Features
+                p.pb_font-20
+                  | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.
+            .row
+              .col-lg
+                .media.pb_feature-v2.text-left.mb-1.mt-5
+                  .pb_icon.d-flex.mr-3.align-self-start.pb_w-15
+                    i.ion-ios-bookmarks-outline.pb_icon-gradient
+                  .media-body
+                    h3.mt-2.mb-2.heading Minimal Design
+                    p.text-sans-serif.pb_font-16
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.
+                .media.pb_feature-v2.text-left.mb-1.mt-5
+                  .pb_icon.d-flex.mr-3.align-self-start.pb_w-15
+                    i.ion-ios-infinite-outline.pb_icon-gradient
+                  .media-body
+                    h3.mt-2.mb-2.heading Unlimited Posibilities
+                    p.text-sans-serif.pb_font-16
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.
+              .col-lg
+                .media.pb_feature-v2.text-left.mb-1.mt-5
+                  .pb_icon.d-flex.mr-3.align-self-start.pb_w-15
+                    i.ion-ios-speedometer-outline.pb_icon-gradient
+                  .media-body
+                    h3.mt-2.mb-2.heading Fast Loading
+                    p.text-sans-serif.pb_font-16
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.
+                .media.pb_feature-v2.text-left.mb-1.mt-5
+                  .pb_icon.d-flex.mr-3.align-self-start.pb_w-15
+                    i.ion-ios-color-filter-outline.pb_icon-gradient
+                  .media-body
+                    h3.mt-2.mb-2.heading Component Based Design
+                    p.text-sans-serif.pb_font-16
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.
+    // END section
+    section.pb_section.bg-light.pb_slant-white
+      .container
+        .row
+          .col-lg-4.order-2
+            img.img-fluid(src='/images/phone_3.png', alt='Image placeholder')
+          .col-lg-8.pr-md-5.pr-sm-0.order-1.mb-5
+            .row
+              .col
+                h2 Application Features
+                p.pb_font-20
+                  | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.
+            .row
+              .col-lg
+                .media.pb_feature-v2.text-left.mb-1.mt-5
+                  .pb_icon.d-flex.mr-3.align-self-start.pb_w-15
+                    i.ion-ios-bookmarks-outline.pb_icon-gradient
+                  .media-body
+                    h3.mt-2.mb-2.heading Minimal Design
+                    p.text-sans-serif.pb_font-16
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.
+                .media.pb_feature-v2.text-left.mb-1.mt-5
+                  .pb_icon.d-flex.mr-3.align-self-start.pb_w-15
+                    i.ion-ios-infinite-outline.pb_icon-gradient
+                  .media-body
+                    h3.mt-2.mb-2.heading Unlimited Posibilities
+                    p.text-sans-serif.pb_font-16
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.
+              .col-lg
+                .media.pb_feature-v2.text-left.mb-1.mt-5
+                  .pb_icon.d-flex.mr-3.align-self-start.pb_w-15
+                    i.ion-ios-speedometer-outline.pb_icon-gradient
+                  .media-body
+                    h3.mt-2.mb-2.heading Fast Loading
+                    p.text-sans-serif.pb_font-16
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.
+                .media.pb_feature-v2.text-left.mb-1.mt-5
+                  .pb_icon.d-flex.mr-3.align-self-start.pb_w-15
+                    i.ion-ios-color-filter-outline.pb_icon-gradient
+                  .media-body
+                    h3.mt-2.mb-2.heading Component Based Design
+                    p.text-sans-serif.pb_font-16
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.
+    // END section
+    section#section-reviews.pb_section.pb_slant-light.pb_pb-220
+      .container
+        .row.justify-content-center.mb-1
+          .col-md-6.text-center.mb-5
+            h5.text-uppercase.pb_font-15.mb-2.pb_color-dark-opacity-3.pb_letter-spacing-2
+              strong Reviews
+            h2 Good Review From Good People
+        .row
+          .col-md
+            .pb_slide_testimonial_sync_v1
+              .pb_slider_content.js-pb_slider_content2
+                div
+                  .media.d-block.text-center.testimonial_v1.pb_quote_v2
+                    .media-body
+                      .quote “
+                      blockquote.mb-5
+                        | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                      p
+                        i.ion-ios-star.text-warning
+                        i.ion-ios-star.text-warning
+                        i.ion-ios-star.text-warning
+                        i.ion-ios-star-half.text-warning
+                        i.ion-ios-star-outline.text-warning
+                      h3.heading Garry Alexander
+                      span.subheading @garry
+                div
+                  .media.d-block.text-center.testimonial_v1.pb_quote_v2
+                    .media-body
+                      .quote “
+                      blockquote.mb-5
+                        | A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                      p
+                        i.ion-ios-star.text-warning
+                        i.ion-ios-star.text-warning
+                        i.ion-ios-star.text-warning
+                        i.ion-ios-star-half.text-warning
+                        i.ion-ios-star-outline.text-warning
+                      h3.heading Deborah Smith
+                      span.subheading @deborah
+                div
+                  .media.d-block.text-center.testimonial_v1.pb_quote_v2
+                    .media-body
+                      .quote “
+                      blockquote.mb-5
+                        | Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+                      p
+                        i.ion-ios-star.text-warning
+                        i.ion-ios-star.text-warning
+                        i.ion-ios-star.text-warning
+                        i.ion-ios-star-half.text-warning
+                        i.ion-ios-star-outline.text-warning
+                      h3.heading James Robertson
+                      span.subheading @james
+                div
+                  .media.d-block.text-center.testimonial_v1.pb_quote_v2
+                    .media-body
+                      .quote “
+                      blockquote.mb-5
+                        | The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.
+                      p
+                        i.ion-ios-star.text-warning
+                        i.ion-ios-star.text-warning
+                        i.ion-ios-star.text-warning
+                        i.ion-ios-star-half.text-warning
+                        i.ion-ios-star-outline.text-warning
+                      h3.heading Marie Gibson
+                      span.subheading @marie
+              .row
+                .col-md-6.mx-auto
+                  .pb_slider_nav.js-pb_slider_nav2
+                    .author
+                      img.img-fluid.rounded-circle(src='/images/person_1.jpg', alt='Generic placeholder image')
+                    .author
+                      img.img-fluid.rounded-circle(src='/images/person_5.jpg', alt='Generic placeholder image')
+                    .author
+                      img.img-fluid.rounded-circle(src='/images/person_2.jpg', alt='Generic placeholder image')
+                    .author
+                      img.img-fluid.rounded-circle(src='/images/person_6.jpg', alt='Generic placeholder image')
+            // END sync_v1
+    // END section
+    section#section-pricing.pb_section.bg-light.pb_slant-white
+      .container
+        .row.justify-content-center.mb-5
+          .col-md-6.text-center.mb-5
+            h5.text-uppercase.pb_font-15.mb-2.pb_color-dark-opacity-3.pb_letter-spacing-2
+              strong Pricing
+            h2 Choose Your Plans
+        .row
+          .col-md
+            .pb_pricing_v1.p-5.border.text-center.bg-white
+              h3 Basic
+              span.price
+                sup $
+                | 19
+                span month
+              p.pb_font-15
+                | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts
+              p.mb-0
+                a.btn.btn-secondary(href='#', role='button') Get started
+          .col-md
+            .pb_pricing_v1.p-5.border.border-primary.text-center.bg-white
+              h3 Business
+              span.price
+                sup $
+                | 39
+                span month
+              p.pb_font-15
+                | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts
+              p.mb-0
+                a.btn.btn-primary.btn-shadow-blue(href='#', role='button') Get started
+          .col-md
+            .pb_pricing_v1.p-5.border.text-center.bg-white
+              h3 Free
+              span.price
+                sup $
+                | 99
+                span month
+              p.pb_font-15
+                | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts
+              p.mb-0
+                a.btn.btn-secondary(href='#', role='button') Get started
+    // ENDs ection
+    section#section-faq.pb_section.pb_slant-white
+      .container
+        .row.justify-content-center.mb-5
+          .col-md-6.text-center.mb-5
+            h5.text-uppercase.pb_font-15.mb-2.pb_color-dark-opacity-3.pb_letter-spacing-2
+              strong FAQ
+            h2 Frequently Ask Questions
+        .row
+          .col-md
+            #pb_faq.pb_accordion(data-children='.item')
+              .item
+                a.pb_font-22.py-4(data-toggle='collapse', data-parent='#pb_faq', href='#pb_faq1', aria-expanded='true', aria-controls='pb_faq1') What is Instant?
+                #pb_faq1.collapse.show(role='tabpanel')
+                  .py-3
+                    p Pityful a rethoric question ran over her cheek, then she continued her way.
+                    p
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+              .item
+                a.pb_font-22.py-4(data-toggle='collapse', data-parent='#pb_faq', href='#pb_faq2', aria-expanded='false', aria-controls='pb_faq2') Is this available to my country?
+                #pb_faq2.collapse(role='tabpanel')
+                  .py-3
+                    p
+                      | A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+              .item
+                a.pb_font-22.py-4(data-toggle='collapse', data-parent='#pb_faq', href='#pb_faq3', aria-expanded='false', aria-controls='pb_faq3') How do I use the features of Instant App?
+                #pb_faq3.collapse(role='tabpanel')
+                  .py-3
+                    p
+                      | Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+              .item
+                a.pb_font-22.py-4(data-toggle='collapse', data-parent='#pb_faq', href='#pb_faq4', aria-expanded='false', aria-controls='pb_faq4') How much do the Instant App cost?
+                #pb_faq4.collapse(role='tabpanel')
+                  .py-3
+                    p
+                      | The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.
+              .item
+                a.pb_font-22.py-4(data-toggle='collapse', data-parent='#pb_faq', href='#pb_faq5', aria-expanded='false', aria-controls='pb_faq5') I have technical problem, who do I email?
+                #pb_faq5.collapse(role='tabpanel')
+                  .py-3
+                    p
+                      | On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.
+    section.pb_xl_py_cover.overflow-hidden.pb_slant-light.pb_gradient_v1.cover-bg-opacity-8(style='background-image: url(/images/1900x1200_img_5.jpg)')
+      .container
+        .row.align-items-center.justify-content-center
+          .col-md-5.justify-content-center
+            h2.heading.mb-5.pb_font-40 Join over 1M+ people who uses Instant App
+            .sub-heading
+              p.mb-4
+                | New free template by 
+                a(href='http://uicookies.com', target='_blank') uicookies.com
+                | . For more templates visit the 
+                a(href='http://uicookies.com', target='_blank') site
+                | . Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          .col-md-1
+          .col-md-5
+            form.bg-white.rounded.pb_form_v1(action='#')
+              h2.mb-4.mt-0.text-center Sign Up for Free
+              .form-group
+                input.form-control.py-3.reverse(type='text', placeholder='Full name')
+              .form-group
+                input.form-control.py-3.reverse(type='text', placeholder='Email')
+              .form-group
+                input.form-control.py-3.reverse(type='text', placeholder='Email')
+              .form-group
+                .pb_select-wrap
+                  select.form-control.pb_height-50.reverse
+                    option(value='', selected='') Type
+                    option(value='') Basic
+                    option(value='') Business
+                    option(value='') Free
+              .form-group
+                input.btn.btn-primary.btn-lg.btn-block.pb_btn-pill.btn-shadow-blue(type='submit', value='Register')
+    // END section
+    

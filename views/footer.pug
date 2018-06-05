@@ -1,0 +1,46 @@
+extends index
+
+block foot
+  footer.pb_footer.bg-light(role='contentinfo')
+        .container
+          .row.text-center
+            .col
+              ul.list-inline
+                li.list-inline-item
+                  a.p-2(href='#')
+                    i.fa.fa-facebook
+                li.list-inline-item
+                  a.p-2(href='#')
+                    i.fa.fa-twitter
+                li.list-inline-item
+                  a.p-2(href='#')
+                    i.fa.fa-linkedin
+          .row
+            .col.text-center
+              p.pb_font-14
+                | © 2017 
+                a(href='https://uicookies.com/') Landing
+                |  Free Bootstrap4. All Rights Reserved. 
+                br
+                |  Designed & Developed by 
+                a(href='https://uicookies.com/') uicookies.com
+                small
+                  | (Don't remove credit link on this footer. See 
+                  a(href='https://uicookies.com/license/', target='_blank') license
+                  | )
+              p.pb_font-14
+                | Demo Images: 
+                a(href='https://unsplash.com/', target='_blank', rel='nofollow') Unsplash
+      // loader
+      #pb_loader.show.fullscreen
+        svg.circular(width='48px', height='48px')
+          circle.path-bg(cx='24', cy='24', r='22', fill='none', stroke-width='4', stroke='#eeeeee')
+          circle.path(cx='24', cy='24', r='22', fill='none', stroke-width='4', stroke-miterlimit='10', stroke='#1d82ff')
+      script(src='/javascripts/jquery.min.js')
+      script(src='/javascripts/popper.min.js')
+      script(src='/javascripts/bootstrap.min.js')
+      script(src='/javascripts/slick.min.js')
+      script(src='/javascripts/jquery.mb.YTPlayer.min.js')
+      script(src='/javascripts/jquery.waypoints.min.js')
+      script(src='/javascripts/jquery.easing.1.3.js')
+      script(src='/javascripts/main.js')
